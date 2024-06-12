@@ -1,3 +1,4 @@
+import React from 'react';
 import FounderCard from './FounderCard';
 
 const Founders = () => {

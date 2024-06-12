@@ -1,4 +1,6 @@
+import React from 'react';
 import './Featurette.css'
+
 
 const Featurette = ({ heading, subheading, text, isReversed, mediaSrc, isVideo }) => {
   return (

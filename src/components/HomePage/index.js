@@ -1,3 +1,4 @@
+import React from 'react';
 import TopNav from '../TopNav';
 import HomeCarousel from '../HomeCarousel';
 import CompanyInfo from '../CompanyInfo';

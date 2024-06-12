@@ -1,3 +1,4 @@
+import React from 'react';
 import './CarouselItem.css'
 const CarouselItem = ({ image, altText, captionTitle, captionText, captionPosition, isActive }) => {
     return (

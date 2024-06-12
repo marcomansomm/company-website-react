@@ -1,6 +1,7 @@
+import React from 'react';
 import CarouselItem from './CarouselItem'
 import './homeCarousel.css'
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 
 const HomeCarousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0);

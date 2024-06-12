@@ -1,3 +1,4 @@
+import React from 'react';
 import './JoinUs.css';
 import FormField from '../FormField';
 

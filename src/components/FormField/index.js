@@ -1,3 +1,4 @@
+import React from 'react';
 
 const FormField = ({ type, id, className, placeholder, label, required, autoFocus, groupClass }) => {
     return (

@@ -1,3 +1,4 @@
+import React from 'react';
 const FounderCard = ({ imageSrc, name, title, description }) => {
     return (
       <div className="col-lg-4" style={{ textAlign: 'center'}}>
