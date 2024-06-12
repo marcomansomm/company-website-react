@@ -1,0 +1,121 @@
+:root {
+  --input-padding-x: .75rem;
+  --input-padding-y: .75rem;
+}
+
+html,
+.body {
+  height: 100%;
+}
+
+.body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  align-items: center;
+  
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #202020;;
+}
+
+.formSignin {
+  width: 100%;
+  max-width: 420px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.formLabelGroup {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.formLabelGroup > input,
+.formLabelGroup > label {
+  padding: var(--input-padding-y) var(--input-padding-x);
+}
+
+.formLabelGroup > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0; /* Override default `<label>` margin */
+  line-height: 1.5;
+  color: #b3b4b3;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+}
+
+.formLabelGroup input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.formLabelGroup input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.formLabelGroup input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.formLabelGroup input::-moz-placeholder {
+  color: transparent;
+}
+
+.formLabelGroup input::placeholder {
+  color: transparent;
+}
+
+.formLabelGroup input:not(:placeholder-shown) {
+  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+  padding-bottom: calc(var(--input-padding-y) / 3);
+  color: rgb(178, 179, 180);
+}
+
+.formLabelGroup input:not(:placeholder-shown) ~ label {
+  padding-top: calc(var(--input-padding-y) / 3);
+  padding-bottom: calc(var(--input-padding-y) / 3);
+  font-size: 12px;
+  color: #777;
+}
+
+img {
+  height: 120px;
+  width: min-content;
+  
+}
+
+.btn-primary {
+  background-color: rgb(27, 99, 39);
+  border: #202020;
+}
+
+.btn-primary:hover {
+  background-color: rgb(20, 77, 30);
+}
+
+.fontColor {
+  color: rgba(250, 249, 248, 0.486);
+}
+
+.left {
+  float: right;
+}
+
+.inputcolor {
+  background-color: #202020;
+  height: 45px;
+}
+
+.alertWarning {
+  font-size: 15px;
+}

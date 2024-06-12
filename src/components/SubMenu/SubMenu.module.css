@@ -1,0 +1,9 @@
+.btnPrimary {
+  background-color: rgb(27, 99, 39);
+  border: #202020;
+  color: white; /* Adicione esta linha para garantir que o texto seja branco */
+}
+
+.btnPrimary:hover {
+  background-color: rgb(20, 77, 30);
+}

@@ -1,11 +1,11 @@
 import React from 'react';
 import Featurette from './Featurette';
-import './CompanyInfo.css'
+import styles from './CompanyInfo.module.css'; // Importa o CSS Module
 
 const CompanyInfo = () => {
   return (
-    <div className="container marketing">
-      <hr className="featurette-divider" />
+    <div className={`container ${styles.marketing}`}>
+      <hr className={styles.featuretteDivider} />
 
       <Featurette
         heading="Saiba como é trabalhar conosco"
@@ -15,7 +15,7 @@ const CompanyInfo = () => {
         isVideo={true}
       />
 
-      <hr className="featurette-divider" />
+      <hr className={styles.featuretteDivider} />
 
       <Featurette
         heading="Oh yeah, it's that good."
@@ -25,7 +25,7 @@ const CompanyInfo = () => {
         isReversed={true}
       />
 
-      <hr className="featurette-divider" />
+      <hr className={styles.featuretteDivider} />
 
       <Featurette
         heading="And lastly, this one."
@@ -34,7 +34,7 @@ const CompanyInfo = () => {
         mediaSrc="https://www.meupositivo.com.br/panoramapositivo/wp-content/uploads/2018/06/199802-como-montar-a-estrutura-de-ti-da-sua-empresa-1.png"
       />
 
-      <hr className="featurette-divider" />
+      <hr className={styles.featuretteDivider} />
     </div>
   );
 };

@@ -1,13 +1,13 @@
 import React from 'react';
+import styles from './Login.module.css'; // Importa o CSS Module
 import FormField from "../FormField";
-import "./Login.css"
 import { Link } from 'react-router-dom';
 
 const Login = () => {
     return (
-        <div className="body">
-        <div className="form-signin">
-            <div className="text-center mb-4 font-color">
+        <div className={styles.body}>
+        <div className={styles.formSignin}>
+            <div className={`text-center mb-4 ${styles.fontColor}`}>
                 <img className="mb-4" src={`${process.env.PUBLIC_URL}/images/markus/logoMarkusGray.png`} alt="" />
                 <h1 className="h2 mb-3 font-weight-normal">Client Login</h1>
                 <p>Log into where each line of code turns into insights and each interaction brings us closer to complete understanding.</p>
@@ -16,27 +16,27 @@ const Login = () => {
                 <FormField
                     type="email"
                     id="inputEmail"
-                    className="form-control inputcolor"
+                    className={`form-control ${styles.inputcolor}`}
                     placeholder="Email address"
                     label="Email address"
                     required={true}
                     autoFocus={true}
-                    groupClass="form-label-group"
+                    groupClass={styles.formLabelGroup}
                 />
 
                 <FormField
                     type="password"
                     id="inputPassword"
-                    className="form-control inputcolor"
+                    className={`form-control ${styles.inputcolor}`}
                     placeholder="Password"
                     label="Password"
                     required={true}
-                    groupClass="form-label-group"
+                    groupClass={styles.formLabelGroup}
                 />
 
-                <p className="left"><Link to="/forgotPassword">Forgot Password?</Link></p>
+                <p className={styles.left}><Link to="/forgotPassword">Forgot Password?</Link></p>
 
-                <div className="checkbox mb-3 font-color">
+                <div className={`checkbox mb-3 ${styles.fontColor}`}>
                     <label>
                     <input type="checkbox" value="remember-me" /> Remember me
                     </label>
@@ -44,10 +44,10 @@ const Login = () => {
                 <button className="btn btn-lg btn-success btn-block" type="submit" style={{width:'390px'}}>Sign in</button>
                 <button className="btn btn-lg btn-outline-success btn-block" type="reset" style={{width:'390px', marginTop:'15px'}}>Reset</button>
             </form>
-            <p className="font-color text-center mt-4"> Don't have an account? <Link to="/joinUs">Sign Up</Link></p>
+            <p className={`text-center mt-4 ${styles.fontColor}`}> Don't have an account? <Link to="/joinUs">Sign Up</Link></p>
             <p className="mt-4 mb-3 text-muted text-center">&copy; 2022-2024 Markus, Inc</p>
         </div></div>
     )
 }
 
-export default Login
+export default Login;

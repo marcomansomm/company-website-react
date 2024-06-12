@@ -1,5 +1,8 @@
 /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
+  img {
+    object-fit: cover;
+  }
   
   /* Carousel base class */
   .carousel {
@@ -23,6 +26,4 @@
     min-width: 100%;
     height: 32rem;
   }
-
-  
   

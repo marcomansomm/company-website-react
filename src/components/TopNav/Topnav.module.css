@@ -8,22 +8,27 @@ body {
   }
   
   img {
-    object-fit:cover;
+    object-fit: cover;
   }
   
-  .btn-primary{
+  .btn-primary {
     background-color: rgb(27, 99, 39);
     border: #202020;
   }
+  
   .navbar {
-    background-color:#202020;
+    background-color: #202020;
   }
+  
   .logoSize {
     height: 40px;
   }
-  .nameSize{
+  
+  .nameSize {
     height: 50px;
   }
+
+  
   /* RESPONSIVE CSS
   -------------------------------------------------- */
   

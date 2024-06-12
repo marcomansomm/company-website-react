@@ -1,12 +1,11 @@
 import React from 'react';
-import './Featurette.css'
-
+import styles from './Featurette.module.css'; // Importa o CSS Module
 
 const Featurette = ({ heading, subheading, text, isReversed, mediaSrc, isVideo }) => {
   return (
     <div className={`row featurette ${isReversed ? 'order-md-2' : ''}`}>
       <div className={`col-md-7 ${isReversed ? 'order-md-2' : ''}`}>
-        <h2 className="featurette-heading">
+        <h2 className={styles.featuretteHeading}>
           {heading} <span className="text-muted">{subheading}</span>
         </h2>
         <p className="lead">{text}</p>

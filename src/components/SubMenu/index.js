@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styles from './SubMenu.module.css';
 
-const SubMenu = ({ link, text, isButton, isActive,  }) => {
+const SubMenu = ({ link, text, isButton, isActive }) => {
   if (isButton) {
     return (
       <li className="nav-item">
-        <a className="btn btn-primary" href={link}>{text}</a>
+        <Link className={`btn btn-primary ${styles.btnPrimary}`} to={link}>{text}</Link>
       </li>
     );
   }
@@ -19,5 +20,3 @@ const SubMenu = ({ link, text, isButton, isActive,  }) => {
 }
 
 export default SubMenu;
-
-//se nao funcionar troca a por link
